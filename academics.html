@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="justify-content: flex-end;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="ec.html">Extra-curriculurs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="typewriter">Academics</h1>
+        <a id="arrow" href="#main-content" style="font-size: 3em; color: white; text-decoration: none; display: inline-block; animation: bounce 2s infinite;">&#x2193;</a>
+    </header>
+    <main id="main-content">
+        <section>
+            <h2>Computer Science</h2>
+            <p>I quickly realized how important music sheets were to my progress on the drum set and the bassoon, soon after I picked up the instruments. Turns out, my friends also struggled from the issue of not being able to find accurate and reliable music scores online. So, inspired by Professor David Cope, together with my passion and knowledge on Computer Science and AI, I created this inter-subject project on music transcription. I built upon the basis of a previous project, Transkun. Switching the model to the Transformer Encorder and employing the log-mel spectrogram for pre-processing, the model can successfully generate MIDI files and PDFs from MP3 files. As my paper has been accepted to the CONF_MLA 2024 Conference, I am more than glad that music transcription is more accessible to music lovers. I hope you enjoy my video!</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JlDPQxeNEGw?si=l4S7bOn0mNAAXSg4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('arrow').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
