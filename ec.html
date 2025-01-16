@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra-curriculars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="justify-content: flex-end;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="typewriter">Extra-curriculars</h1>
+        <a id="arrow" href="#main-content" style="font-size: 3em; color: white; text-decoration: none; display: inline-block; animation: bounce 2s infinite;">&#x2193;</a>
+    </header>
+    <main id="main-content">
+        <section>
+            <h2>Porcelain History & Culture Investigation</h2>
+            <p>Curious in porcelain's great charm, I had visited the World-famous "Porcelain Capital" Jingdezhen. To my surprise, I not only learned and recorded about porcelain's rich history and culture, I also interviewed international craftsmen from all over the world at the "Spring and Autumn Fair"!</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NEn20gTv4L0?si=daT2uttEb7e5uqqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('arrow').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
