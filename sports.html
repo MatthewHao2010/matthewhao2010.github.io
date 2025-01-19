@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="justify-content: space-between;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="ec.html">Extra-curriculurs</a></li>
+                <li><a href="tns.html">Teaching & Speaking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="typewriter">Sports</h1>
+        <a id="arrow" href="#main-content" style="font-size: 3em; color: white; text-decoration: none; display: inline-block; animation: bounce 2s infinite;">&#x2193;</a>
+    </header>
+    <main id="main-content">
+        <section id="squash">
+            <h2>Squash</h2>
+            <p>I love playing Squash! I have been playing for more than a year now and I am very passionate about this sport. It not only requires a balance between power and control, it is also heavily influences by strategy. This video offers insights to a day of regular training and games with my coach and a peer with similar backgrounds.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XqEOFqPa4ik?si=FLTb-itLOeRQ9tu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="tennis">
+            <h2>Tennis</h2>
+            <p>I love playing Tennis! I've played for almost a year and I am quite passionate about this sport. This video offers insights to one of my recent trainings. Although training contents vary, a typical training session starts with warm-up and ends with serving, just like the video. I hope you enjoy it and thank you for watching!</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/1QW0BspJfYk?si=KbikoCLjCiNlxTKD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section id="skiing">
+            <h2>Skiing</h2>
+            <p>Skiing has been my winter sport every year before the pandemic started. The below is a video from Febuary 2024.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WELmHzfK7yg?si=OIs4VOa-YbQEtHvJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('arrow').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

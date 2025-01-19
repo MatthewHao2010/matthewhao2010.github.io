@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="justify-content: space-between;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="ec.html">Extra-curriculurs</a></li>
+                <li><a href="tns.html">Teaching & Speaking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="typewriter">Contact</h1>
+        <a id="arrow" href="#main-content" style="font-size: 3em; color: white; text-decoration: none; display: inline-block; animation: bounce 2s infinite;">&#x2193;</a>
+    </header>
+    <main id="main-content">
+        
+        <section class="email-section">
+            <div class="email-box">
+                <p id="email-text">matthew.hao2010@hotmail.com</p>
+                <button id="copy-button">Copy</button>
+            </div>
+        </section>
+        <!-- Notification box -->
+        <div id="notification" style="display:none;">Email Copied!</div>
+    </main>
+    <script>
+        document.getElementById('arrow').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.getElementById('copy-button').addEventListener('click', function() {
+            // Create a temporary input element
+            const tempInput = document.createElement('input');
+            tempInput.value = document.getElementById('email-text').textContent;
+            document.body.appendChild(tempInput);
+        
+            // Select and copy the email address
+            tempInput.select();
+            document.execCommand('copy');
+        
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+        
+            // Show notification
+            const notification = document.getElementById('notification');
+            notification.style.display = 'block';
+            notification.style.opacity = '1';
+            notification.style.transform = 'translateY(0)';
+        
+            // Hide notification after 2 seconds
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateY(-50px)';
+                setTimeout(() => notification.style.display = 'none', 500); // Wait for the fade out to complete
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
